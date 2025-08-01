@@ -25,7 +25,6 @@ class Player(CircleShape):
         if keys[pygame.K_s]:    #key s -> move down
             self.move(-dt)
     
-    # in the player class
     def triangle(self):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
         right = pygame.Vector2(0, 1).rotate(self.rotation + 90) * self.radius / 1.5
